@@ -1,0 +1,23 @@
+:root {
+  font-family: 'Josefin Sans', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary: #256424;
+  --secondary: #17c214;
+  --terceary: #19b888;
+  --clear-green: #33c612;
+  --soft-white: #f1f1f1;
+  --white: #fefefe;
+  --black: #111;
+  --gray: #222222;
+  --red: #9f2020;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
