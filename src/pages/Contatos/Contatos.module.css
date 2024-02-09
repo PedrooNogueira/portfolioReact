@@ -10,14 +10,43 @@
 }
 
 .icones {
-    width: 90%;
+    width: 40%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-block: 1.5rem;
 }
 
 .icone {
     font-size: 3rem;
     color: var(--secondary);
+}
+
+.titulo {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.subtitulo {
+    font-size: 25px;
+    color: var(--clear-black)
+}
+
+.paragrafo {
+    font-size: 25px;
+    color: var(--clear-black);
+    font-weight: bold;
+}
+
+@media (max-width: 760px) {
+    .contatos {
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .icones {
+        gap: 0.5rem;
+    }
 }
