@@ -3,10 +3,11 @@
     height: 50px;
     background-color: var(--primary);
     color: var(--white);
-
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: fixed;
+    top: 0;
 }
 
 .header span {
@@ -23,4 +24,82 @@
 
 .header a:hover {
     color: var(--clear-green);
+}
+
+/* Menu sandwich */
+
+.menuButton {
+    display: none;
+    /* Oculta o botão do menu em telas maiores que 768px */
+}
+
+@media (max-width: 768px) {
+    .menuButton {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .linha {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: var(--white);
+    }
+
+    .menuSandwich {
+        display: none;
+    }
+
+    .show {
+        display: flex;
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        position: absolute;
+        right: 0px;
+        top: 50px;
+        background-color: var(--primary);
+        flex-direction: column;
+        padding: 20px;
+        gap: 1rem;
+        z-index: 100;
+        animation: slideIn 0.9s ease forwards;
+        /* animação de slideIn */
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .hide {
+        animation: slideOut 0.3s ease forwards;
+        /* animação de slideOut */
+    }
+
+    @keyframes slideOut {
+        from {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        to {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+    }
 }
