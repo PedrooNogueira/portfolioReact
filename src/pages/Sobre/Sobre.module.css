@@ -1,0 +1,82 @@
+.sobre {
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-block: 40px;
+}
+
+.avatar {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.bio span {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.bio strong {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.textos h2,
+p {
+    margin-bottom: 1rem;
+
+}
+
+.techs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icones {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icones img {
+    height: 50px;
+}
+
+/* responsividade */
+
+@media (max-width: 768px) {
+    .bio {
+        flex-direction: column;
+        padding-inline: 20px;
+        gap: 1rem;
+    }
+
+    .bio img {
+        max-width: 80%;
+    }
+}
+
+@media (max-widh: 400px) {
+    .icones {
+        gap: 0.5rem;
+    }
+
+    .icones img {
+        height: 40px;
+    }
+}
