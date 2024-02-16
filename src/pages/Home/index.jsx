@@ -8,7 +8,7 @@ function Home() {
                 <p>
                     Olá, sou <br />
                     <span>Pedro Nogueira</span> <br />
-                    Estudante de TI
+                    Dev fullstack
                 </p>
                 <Link to="/sobre" className={`${styles.btn} ${styles.btn_green}`}>
                     Sobre mim
