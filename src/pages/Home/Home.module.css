@@ -1,3 +1,5 @@
+/* Home.module.css */
+
 .home {
     width: 100%;
     min-height: 100vh;
@@ -67,6 +69,17 @@
 @media (max-width:768px) {
     .home {
         flex-direction: column;
+        align-items: center;
+        /* Centraliza o conteúdo verticalmente em telas menores */
+    }
+
+    .home p {
+        font-size: 2rem;
+    }
+
+    .home img {
+        width: 350px;
+        height: 350px;
     }
 }
 
@@ -76,8 +89,8 @@
     }
 
     .home img {
-        max-width: 100%;
-        height: auto;
-        padding-inline: 2.5rem;
+        width: 350px;
+        height: 350px;
+        padding-inline: 3.5rem;
     }
 }

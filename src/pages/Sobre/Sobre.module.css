@@ -1,3 +1,5 @@
+/* Sobre.module.css */
+
 .sobre {
     width: 100%;
     min-height: 85vh;
@@ -5,21 +7,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    padding-block: 40px;
+    padding: 40px;
+    /* Aumenta o espaçamento interno para espaçar os elementos */
 }
 
 .avatar {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
+    margin-bottom: 20px;
+    /* Adiciona espaçamento abaixo do avatar */
 }
 
 .bio {
     display: flex;
+    flex-direction: column;
+    /* Ajusta a direção da bio para coluna em telas pequenas */
     align-items: center;
-    gap: 3rem;
-    margin-bottom: 2.5rem;
+    gap: 1rem;
+    /* Ajusta o espaçamento entre os elementos em telas pequenas */
+    text-align: center;
+    /* Centraliza o texto */
+    margin-bottom: 20px;
+    /* Adiciona espaçamento abaixo da bio */
 }
 
 .bio span {
@@ -33,13 +43,13 @@
 }
 
 .textos h2,
-p {
+.textos p {
     margin-bottom: 1rem;
-
 }
 
 .techs {
-    width: 50%;
+    width: 100%;
+    /* Ajusta a largura das techs para ocupar toda a largura em telas pequenas */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,36 +57,31 @@ p {
 }
 
 .icones {
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 20px;
+    /* Adiciona espaçamento acima dos ícones */
 }
 
 .icones img {
-    height: 50px;
+    height: 40px;
+    /* Define um tamanho menor para os ícones */
 }
 
-/* responsividade */
+/* Responsividade */
 
 @media (max-width: 768px) {
-    .bio {
-        flex-direction: column;
-        padding-inline: 20px;
-        gap: 1rem;
-    }
-
-    .bio img {
-        max-width: 80%;
-    }
-}
-
-@media (max-widh: 400px) {
-    .icones {
-        gap: 0.5rem;
+    .avatar {
+        width: 150px;
+        /* Ajusta o tamanho do avatar para telas médias */
+        height: 150px;
+        /* Ajusta o tamanho do avatar para telas médias */
     }
 
     .icones img {
-        height: 40px;
+        height: 30px;
+        /* Define um tamanho menor para os ícones em telas pequenas */
     }
 }
